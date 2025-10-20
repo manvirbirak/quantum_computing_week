@@ -7,7 +7,7 @@ import os
 # Create and save directory
 os.makedirs("data", exist_ok=True)
 
-# Create a simple 1-qubit circuit (example: put in superposition)
+# Create a simple 1-qubit circuit 
 qc = QuantumCircuit(1)
 qc.h(0)
 
