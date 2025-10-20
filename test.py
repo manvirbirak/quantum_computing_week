@@ -1,20 +1,4 @@
 from qiskit import QuantumCircuit
-from qiskit.visualization import circuit_drawer
-import os
-
-# Create folder if it doesn't exist
-os.makedirs("data", exist_ok=True)
-
-# Create circuit
-qc = QuantumCircuit(1, 1)
-qc.measure(0, 0)
-
-# Save the circuit as an image
-circuit_drawer(qc, output='mpl', filename="data/quantum_circuit.png")
-
-print("Circuit saved to data/quantum_circuit.png")
-
-from qiskit import QuantumCircuit
 from qiskit.quantum_info import Statevector
 from qiskit.visualization import plot_bloch_multivector
 import matplotlib.pyplot as plt
