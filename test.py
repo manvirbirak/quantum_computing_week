@@ -20,4 +20,3 @@ bloch_plot = plot_bloch_multivector(init_state)
 plt.savefig("data/bloch_vector.png")
 
 print("Bloch vector saved to data/bloch_vector.png")
-
